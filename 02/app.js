@@ -1,120 +1,155 @@
-console.log('app');
+console.log('app.js');
 
-// ---------------------------------------------------------
+// // 변수
+// var name = '강순범';
+// var Name = '강순범';
+// var name = '강순범'; // 같은 이름의 변수를 써도 에러가 나지 않음
 
-// // Create
-// var todos = ['운동']
-// var todo = '게임';
-// todos.push(todo);
-// console.log(todos);
+// console.log(name);
+// console.log(Name);
 
-// ---------------------------------------------------------
 
-// // Read
 
-// todos.forEach(function(todo){
-    
-//     console.log(todo);
-// });
+// // 예약어 -> 예약어는 변수명을 사용할 수 없음
+// var var = 'test';
+// console.log(var);
 
-// ---------------------------------------------------------
 
-// // Update
-//     // var arr = [1,2];
-//     // arr[1] = 3;
-//     // // arr = 1,3
 
-// var todos = ['운동', '게임'];
-// var updateTodo = '게임';
-// var updateIndex = todos.findIndex(function(todo) {
-//     return todo === updateTodo;
-//   });
-// console.log(updateIndex);
-// todos[updateIndex] = '공부';
-// console.log(todos);
+// // 주석
+// // 한줄 주석
+// console.log(1)
+// console.log(2)
 
-// ---------------------------------------------------------
+// /*
+// // 긴 주석
+// console.log(1)
+// console.log(2)
+// */
 
-// // Delete
 
-// var todos = ['운동', '공부', '목욕'];
-// var deleteTodo = '공부';
-// var deleteIndex = todos.findIndex(function(todo) {
-//   return todo === deleteTodo;
-// });
-// todos.splice(deleteIndex, 1);
-// console.log(todos);
 
-// ---------------------------------------------------------
+// 데이터 타입
+// Stirng
 
-// // if
+// // Number
+// var count = 1;
+// console.log(count);
 
-// // var isMan = true;
-// var isMan = false;
-// if(isMan){
-//     console.log('1');
-// } else if(isMan && isHero){
-//     console.log('man & hero');
-// } else {
-//     console.log('2');
+
+// // Boolean - true or false 쌍따옴표 사용 안함
+// var isMan = true; // bool
+// var isMan = "true"; // String
+
+// console.log(isMan);
+
+
+// Function
+// function log(str) {
+//     console.log(str);
 // }
 
-// ---------------------------------------------------------
+// log('hello');
 
-// window.alert('1');
-// // alert('1');
-// alert('안녕하세요');
-// alert('1');
-
-
-// var who = prompt('당신은 누구세요?');
-// console.log(who);
-
-
-// confirm('정말 삭제하시겠습니까?');
-
-// var isDelete = confirm('정말 삭제하시겠습니까?');
-// console.log(isDelete);
-
-
-// ---------------------------------------------------------
-
-// function sum(a,b){
-//     // return a + b;
+// var log = function(str) {
+//     console.log(str)
 // }
-// console.log(sum(1,2));
-
-// ---------------------------------------------------------
-
-// var car = {
-//     year: '2014',
-//     starting: function() {
-//       console.log('starting..');
-//     },
-//   };
-  
-//   car.starting();
-
-// ---------------------------------------------------------
-
-// // 익명 즉시실행함수, 스코프 보호
-// (function() {
-//     //코드
-//     var a = 'a'; // --> 변수의 캡슐화 효과
-//     console.log(a);
-// })();
-
-// ---------------------------------------------------------
-
-function sum(x, y) {
-    if (!y) y = 1;
-    console.log(x + y);
-}
-console.log(sum(3));
-console.log(sum(3,3));
-
-// ---------------------------------------------------------
+// log('hello');
 
 
+// // Object
+// var image = {
+//     width: 100,
+//     height: 100,
+//     name: '1.png',
+// };
 
-// ---------------------------------------------------------
+// image.length = 7
+// image['type'] = 'png'
+
+// image = {w:1, h:2}
+
+// // var imageWidth = 100;
+// // var imageHeight = 100;
+// // var imageName = '1.png';
+
+// console.log(image);
+
+
+// // Array
+// var image1 = [1,2,3,4,5,6,"a",{}];
+// image1[0] = 'a'
+// image1[8] = '8th'
+// console.log(image1);
+
+
+// //null
+// var data = null;
+// var data1 = '';
+// console.log(data,data1);
+
+
+// //undefined
+// var data2;
+// console.log(data2);
+
+
+
+// // 주요 연산자
+// +
+// console.log(1 + 2);
+// console.log('a' + 'b');
+// console.log(1 + '4'); // 데이터타입 섞어서 쓰는건 지양해야 함
+
+// var count = 1;
+// var number = '2';
+
+// console.log(count + number);
+
+
+// // 동등, 일치
+// console.log(1 == 1); // true
+// console.log(1 == 2); // false
+// console.log('' == '0'); // false
+// console.log(0 == ''); // true 0 -> false, '' -> false
+// console.log(0 === ''); // false
+
+
+// //
+// if (true) {
+//     console.log(1);
+// }
+// if (false) {
+//     console.log(2);
+// }
+
+
+// // and, or, !
+// var isHero = true;
+
+// if (isHero) {
+//     console.log('hero');
+// }
+// if (!isHero) {
+//     console.log('hero');
+// }
+
+
+// // typeof
+// console.log(typeof 1);
+// console.log(typeof []);
+// console.log(typeof '1');
+// console.log(typeof {});
+
+
+
+
+
+
+
+
+
+
+
+
+
