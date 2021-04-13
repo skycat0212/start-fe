@@ -1,130 +1,120 @@
-// // BOM - window
+console.log('app');
 
-// console.log(window.outerWidth)
+// ---------------------------------------------------------
 
-// console.log(window.name)
+// // Create
+// var todos = ['운동']
+// var todo = '게임';
+// todos.push(todo);
+// console.log(todos);
 
-// window.open('http://www.daum.net');
+// ---------------------------------------------------------
 
+// // Read
 
-
-
-// DOM 탐색
-
-// console.log(document.getElementById('debug'))
-
-// var debug = document.getElementById('debug')
-// console.log(debug)
-
-
-// var box = document.querySelector('.box');
-// var box2 = document.querySelectorAll('.box');
-// console.log(box2);
-
-// var box = document.querySelector('#debug');
-// console.log(box);
-
-
-
-
-// // DOM 생성
-
-// var div = document.createElement('div');
-// console.log(div);
-// div.style.border = '1px solid #000';
-// div.innerHTML = 'Hello!';
-
-// document.body.appendChild(div);
-
-
-
-
-// // DOM 삽입
-
-// const span = document.createElement('span');
-// const textNode = document.createTextNode('hello!'); 
-// span.appendChild(textNode);
-// document.querySelector('#debug').appendChild(span);
-
-
-
-
-// // DOM 제거
-
-// var debug = document.getElementById('debug');
-// debug.remove();
-
-// const list = document.getElementById('list'); 
-// list.removeChild(list.children[0]);
-
-
-
-
-// 이벤트
-
-// document.body.addEventListener('click', function(){
-//     console.log('click');
-// })
-
-// document.querySelector('.box').addEventListener('click', function(){
-//     console.log('click');
+// todos.forEach(function(todo){
+    
+//     console.log(todo);
 // });
 
-// function clickBody(){
-//     console.log('click');
-// }
-// document.querySelector('.box').addEventListener('click', clickBody);
+// ---------------------------------------------------------
 
+// // Update
+//     // var arr = [1,2];
+//     // arr[1] = 3;
+//     // // arr = 1,3
 
-// var clickCount = 0;
-// function popup(event){
-//     console.log(++clickCount);
-//     console.log(arguments ,event ,event.type, event.currentTarget);
-// }
-// document.body.addEventListener('click', popup);
+// var todos = ['운동', '게임'];
+// var updateTodo = '게임';
+// var updateIndex = todos.findIndex(function(todo) {
+//     return todo === updateTodo;
+//   });
+// console.log(updateIndex);
+// todos[updateIndex] = '공부';
+// console.log(todos);
 
-// document.body.addEventListener('click', function(){
-//     console.log("click");
+// ---------------------------------------------------------
+
+// // Delete
+
+// var todos = ['운동', '공부', '목욕'];
+// var deleteTodo = '공부';
+// var deleteIndex = todos.findIndex(function(todo) {
+//   return todo === deleteTodo;
 // });
+// todos.splice(deleteIndex, 1);
+// console.log(todos);
 
+// ---------------------------------------------------------
 
-// var list = document.querySelector('#list');
-// console.log(list.children);
+// // if
 
-// // debugger;
-// for(var i=0; i<list.children.length; i++){
-//     console.log(list.children[i]);
-//     list.children[i].addEventListener('click',function(){
-//         console.log(1);
-//     })
+// // var isMan = true;
+// var isMan = false;
+// if(isMan){
+//     console.log('1');
+// } else if(isMan && isHero){
+//     console.log('man & hero');
+// } else {
+//     console.log('2');
 // }
 
+// ---------------------------------------------------------
 
-// var app = document.getElementById("list");
-
-// app.addEventListener("click", function(event) {
-//     if(event.target.nodeName == "LI"){
-//         //한개의 event리스너로 모든 li에 click이벤트 등록과 비슷
-//         console.log('li');
-//         event.stopPropagation();
-//     }
-// });
-
-// document.body.addEventListener('click', function(){
-//     console.log('body');
-// })
+// window.alert('1');
+// // alert('1');
+// alert('안녕하세요');
+// alert('1');
 
 
-var link = document.querySelector('#link');
-link.addEventListener('click', function(){
-    console.log(11111);
-    // event.stopPropagation();
-    event.preventDefault();
-});
+// var who = prompt('당신은 누구세요?');
+// console.log(who);
+
+
+// confirm('정말 삭제하시겠습니까?');
+
+// var isDelete = confirm('정말 삭제하시겠습니까?');
+// console.log(isDelete);
+
+
+// ---------------------------------------------------------
+
+// function sum(a,b){
+//     // return a + b;
+// }
+// console.log(sum(1,2));
+
+// ---------------------------------------------------------
+
+// var car = {
+//     year: '2014',
+//     starting: function() {
+//       console.log('starting..');
+//     },
+//   };
+  
+//   car.starting();
+
+// ---------------------------------------------------------
+
+// // 익명 즉시실행함수, 스코프 보호
+// (function() {
+//     //코드
+//     var a = 'a'; // --> 변수의 캡슐화 효과
+//     console.log(a);
+// })();
+
+// ---------------------------------------------------------
+
+function sum(x, y) {
+    if (!y) y = 1;
+    console.log(x + y);
+}
+console.log(sum(3));
+console.log(sum(3,3));
+
+// ---------------------------------------------------------
 
 
 
-
-
-
-
+// ---------------------------------------------------------
