@@ -22,6 +22,18 @@
 
 // console.log(str, s);
 
+// //es5
+// var cp = 'ssully';
+// var url = 'https://1boon.kakao.com/' + cp;
+
+// //es6
+// const url = `https://1boon.kakao.com/${cp}`
+
+//
+// var account = 'peter';
+// const email = `${account}@daum.net`;
+
+// console.log(email);
 
 // -------------------------------------------------------
 // 기본 매개변수
@@ -98,14 +110,14 @@
 // -------------------------------------------------------
 // 향상된 객체 리터럴
 
-const number = 1234;
+// const number = 1234;
 
-const student = {
-  // number: number
-  number,
-};
+// const student = {
+//   // number: number
+//   number,
+// };
 
-console.log(student);
+// console.log(student);
 
 
 // -------------------------------------------------------
