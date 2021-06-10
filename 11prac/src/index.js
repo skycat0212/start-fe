@@ -5,6 +5,7 @@ import './todos.css';
 
 import { render } from './html-render';
 import formInput from './form-input';
+import { loadData } from './data-manager';
 
 
 // const $inputForm = document.querySelector('#input-form');
@@ -19,17 +20,19 @@ const $result = document.querySelector('#result');
 //     isDone: false,
 // };
 
-const todos = [
+const todos = loadData();
 
-    // {
-    //     text: 'JS Study111',
-    //     isDone: false,
-    // },
-    // {
-    //     text: 'JS Study222',
-    //     isDone: true,
-    // },
-];
+// const todos = [
+
+//     // {
+//     //     text: 'JS Study111',
+//     //     isDone: false,
+//     // },
+//     // {
+//     //     text: 'JS Study222',
+//     //     isDone: true,
+//     // },
+// ];
 
 $result.addEventListener('click', (event) => {
     // console.log(event.target.className);
