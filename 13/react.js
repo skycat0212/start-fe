@@ -9,7 +9,6 @@
 
 // const element = <h1>Hello, {name}</h1>;
 
-
 const rootEl = document.getElementById('root');
 const el = <div className="container">React</div>;
 ReactDOM.render(el, rootEl);
