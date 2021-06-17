@@ -1,25 +1,21 @@
-import React from 'react'; //
+import React, { useState } from 'react';
+import Header from './Header';
 
 function App() {
-  // return (
-  //   <div className="App">
-  //     <header className="App-header">
-  //       <img src={logo} className="App-logo" alt="logo" />
-  //       <p>
-  //         Edit <code>src/App.js</code> and save to reload.
-  //       </p>
-  //       <a
-  //         className="App-link"
-  //         href="https://reactjs.org"
-  //         target="_blank"
-  //         rel="noopener noreferrer"
-  //       >
-  //         Learn React
-  //       </a>
-  //     </header>
-  //   </div>
-  // );
-  return <div className="App">Hello1231231</div>
+  const [countNumber, setCountNumber] = useState(0);
+
+  function addCountNumber() {
+    setCountNumber(countNumber + 1);
+  }
+
+  return (
+    <div className="App">
+      <Header />
+      {/* <div>0</div> */}
+      <div>{countNumber}</div>
+      <button onClick={addCountNumber}>플러스</button>
+    </div>
+  );
 }
 
 export default App;
